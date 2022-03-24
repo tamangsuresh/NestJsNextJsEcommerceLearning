@@ -1,0 +1,5 @@
+fragment Params on Cat {
+  name
+  age
+  breed
+}

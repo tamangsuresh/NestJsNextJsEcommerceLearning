@@ -1,0 +1,161 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CreateCatDto {
+  id: String!
+  name: String!
+  age: Int!
+  breed: String!
+}
+
+type DeleteCatDto {
+  data: String!
+}
+
+type UpdateCat {
+  id: String!
+  name: String!
+  age: Float!
+  breed: String!
+}
+
+type DeleteDogDto {
+  data: String!
+}
+
+type DogDto {
+  id: String!
+  name: String!
+  age: Float!
+  breed: String!
+}
+
+type UpdateDogDot {
+  id: String!
+  name: String!
+  age: Float!
+  breed: String!
+}
+
+type DeleteGoatDto {
+  data: String!
+}
+
+type GoatDto {
+  id: String!
+  name: String!
+  age: Float!
+  breed: String!
+}
+
+type BallDto {
+  id: String!
+  name: String!
+  age: Float!
+  breed: String!
+}
+
+type DeleteBallDto {
+  data: String!
+}
+
+type UpdateBall {
+  id: String!
+  name: String!
+  age: Float!
+  breed: String!
+}
+
+type MobileDto {
+  name: String!
+  age: String!
+  type: String!
+}
+
+type Query {
+  hello: String!
+  cats: [CreateCatDto!]!
+  helloDogs: String!
+  dogs: [DogDto!]!
+  goatHello: String!
+  goats: [GoatDto!]!
+  hellBall: String!
+  balls: [BallDto!]!
+  mobile: String!
+  mobiles: [MobileDto!]!
+}
+
+type Mutation {
+  createCat(input: CatInput!): CreateCatDto!
+  deleteCat(id: String!): DeleteCatDto!
+  updateByIdCat(input: UpdateCatInput!): UpdateCat!
+  createDog(input: DogInput!): DogDto!
+  deleteDog(id: String!): DeleteDogDto!
+  updateByIdDog(input: UpdateDogInput!): UpdateDogDot!
+  createGoat(input: GoatInput!): GoatDto!
+  deleteGoat(id: String!): DeleteGoatDto!
+  updateByIdGoat(input: UpdateGoatInput!): GoatDto!
+  createBall(input: BallInput!): BallDto!
+  deleteBall(id: String!): DeleteBallDto!
+  updateByIdBall(input: UpdateBallInput!): UpdateBall!
+  createMobile(input: MobileInput!): MobileDto!
+}
+
+input CatInput {
+  name: String!
+  age: Int!
+  breed: String!
+}
+
+input UpdateCatInput {
+  id: String!
+  name: String
+  age: Int
+  breed: String
+}
+
+input DogInput {
+  name: String!
+  age: Int!
+  breed: String!
+}
+
+input UpdateDogInput {
+  id: String!
+  name: String
+  age: Int
+  breed: String
+}
+
+input GoatInput {
+  name: String!
+  age: Int!
+  breed: String!
+}
+
+input UpdateGoatInput {
+  id: String!
+  name: String
+  age: Int
+  breed: String
+}
+
+input BallInput {
+  name: String!
+  age: Int!
+  breed: String!
+}
+
+input UpdateBallInput {
+  id: String!
+  name: String
+  age: Int
+  breed: String
+}
+
+input MobileInput {
+  name: String!
+  age: Float!
+  type: String!
+}

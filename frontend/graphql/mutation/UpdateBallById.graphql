@@ -1,0 +1,11 @@
+mutation UpdateByIdBall(
+  $id: String!
+  $name: String
+  $age: Int
+  $breed: String
+) {
+  updateByIdBall(input: { id: $id, name: $name, age: $age, breed: $breed }) {
+    id
+    ...Cat
+  }
+}

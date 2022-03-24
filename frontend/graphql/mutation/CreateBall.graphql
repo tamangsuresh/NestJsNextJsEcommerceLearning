@@ -1,0 +1,5 @@
+mutation CreateBall($name: String!, $age: Int!, $breed: String!) {
+  createBall(input: { name: $name, age: $age, breed: $breed }) {
+    ...Cat
+  }
+}
